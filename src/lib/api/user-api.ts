@@ -1,6 +1,7 @@
 import { RegisterInput } from "@/validations/auth-schema";
 import { UserInput } from "@/validations/user-schema";
 
+// Get Users Data
 export async function getUsers(
   token: string | null,
   currentPage: number,
@@ -28,7 +29,6 @@ export async function getUsers(
   }
 
   return res.json();
-  // akan mengembalikan: { data: User[], count: number, page: number, totalPages: number }
 }
 
 // Create New User Account
